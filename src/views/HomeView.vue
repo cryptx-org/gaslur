@@ -1,18 +1,41 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template lang="">
+  <div class="body">
+    <Navbar />
+    <Hero />
+    <Auctions />
+    <Startingsec />
+    <Discover />
+    <Footer />
   </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Navbar from "@/components/Navbar.vue";
+import Hero from "@/components/Hero.vue";
+import Auctions from "@/components/Auctions.vue";
+import Startingsec from "@/components/Startingsec.vue";
+import Discover from "@/components/Discover.vue";
+import Footer from "@/components/Footer.vue";
 export default {
-  name: 'HomeView',
   components: {
-    HelloWorld
-  }
-}
+    Navbar,
+    Hero,
+    Auctions,
+    Startingsec,
+    Discover,
+    Footer,
+  },
+};
 </script>
+<style lang="scss">
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  font-style: normal;
+}
+.body {
+  height: 100vh;
+  background: $bg-color;
+}
+</style>
