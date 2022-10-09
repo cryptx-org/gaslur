@@ -7,7 +7,7 @@
         vestibulum nibh mi venenatis
       </p>
       <div class="btn-container">
-        <button class="explore-btn">Explore</button>
+        <a class="explore-btn" href="#Auctions">Explore</a>
         <button class="create-btn">Create</button>
       </div>
     </div>
@@ -27,6 +27,7 @@ export default {};
   padding: 5rem;
 }
 .heroContainer-1 {
+  animation: ScrollX 0.5s ease-out;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -45,6 +46,7 @@ export default {};
   }
 }
 .heroContainer-2 {
+  animation: Scale 0.5s ease-in;
   display: flex;
   align-items: center;
   .herocard {
@@ -60,8 +62,17 @@ export default {};
     padding: 0.5rem 4rem;
     border-radius: 16px;
     border: 1px solid $text-color;
+    &:hover {
+      background: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-color: #9b51e0;
+      animation: ButtonScale 0.5s ease-out;
+    }
   }
   .explore-btn {
+    text-decoration: none;
+    color: white;
     background: linear-gradient(
       103.91deg,
       #9b51e0 21.01%,
@@ -70,6 +81,9 @@ export default {};
     border-radius: 16px;
     padding: 0.5rem 4rem;
     margin-right: 2rem;
+    &:hover {
+      animation: ButtonScale 0.5s ease-out;
+    }
   }
 }
 </style>

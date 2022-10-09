@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="auctionsContainer">
+  <div class="auctionsContainer" id="Auctions">
     <div class="top-bar">
       <h1>HOT AUCTIONS</h1>
       <div class="view-btn">View all <v-icon>mdi-arrow-right</v-icon></div>

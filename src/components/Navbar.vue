@@ -18,6 +18,7 @@ export default {};
 </script>
 <style lang="scss" scoped>
 .container {
+  animation: ScrollY 0.5s ease-out;
   display: grid;
 
   width: 90%;
