@@ -1,6 +1,6 @@
 # nft
 
-![] (cryptx-org/gaslur/blob/main/public/cover.png)
+![] (/public/cover.png)
 
 ## Project setup
 
