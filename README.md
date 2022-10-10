@@ -1,6 +1,6 @@
 # nft
 
-![Image] (/public/cover.png)
+![Image] (public/cover.png)
 
 ## Project setup
 
