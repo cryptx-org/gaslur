@@ -1,6 +1,6 @@
 <template lang="">
   <div class="card-container">
-    <v-row>
+    <v-row id="card1">
       <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
         <v-card width="300px" flat color="#1f1d2b">
           <v-img :src="card.src" height="313px"> </v-img>

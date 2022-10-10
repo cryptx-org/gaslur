@@ -1,6 +1,6 @@
 <template lang="">
-  <div class="card-container" id="test">
-    <v-row>
+  <div class="card-container">
+    <v-row id="card">
       <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
         <v-card width="300px" flat color="#1f1d2b">
           <v-img :src="card.src" height="313px"> </v-img>
@@ -57,9 +57,6 @@ export default {
       },
     ],
   }),
-  mounted() {
-    this.observer.observe(this.$el);
-  },
 };
 </script>
 <style lang="scss" scoped>

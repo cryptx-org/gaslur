@@ -17,14 +17,26 @@ import Discover from "@/components/Discover.vue";
 import Footer from "@/components/Footer.vue";
 export default {
   mounted() {
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log("Observed");
-        entry.target.classList.add("animation");
-        observer.unobserve(entry.target);
+        console.log(entry);
+        if (entry.isIntersecting && entry.target.id == "card") {
+          entry.target.classList.add("animation");
+        } else if (entry.isIntersecting && entry.target.id == "card1") {
+          entry.target.classList.add("animation");
+        } else if (entry.isIntersecting && entry.target.id == "icons") {
+          entry.target.classList.add("scale");
+        } else {
+          entry.target.classList.remove("animation");
+        }
       });
     });
-    observer.observe(document.getElementById("test"));
+    let target = document.getElementById("card");
+    let target1 = document.getElementById("card1");
+    let target2 = document.getElementById("icons");
+    observer.observe(target);
+    observer.observe(target1);
+    observer.observe(target2);
   },
   components: {
     Navbar,
@@ -50,6 +62,9 @@ export default {
   background: $bg-color;
 }
 .animation {
-  animation: ScrollX 1s ease-in;
+  animation: ScrollX 0.5s ease-in;
+}
+.scale {
+  animation: Scale 0.8s ease-in;
 }
 </style>

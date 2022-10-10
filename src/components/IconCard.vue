@@ -1,7 +1,7 @@
 <template lang="">
   <div class="iconCard">
     <div class="blur"></div>
-    <v-row>
+    <v-row id="icons">
       <v-col
         v-for="iconcard in IconCards"
         :key="iconcard.text"
