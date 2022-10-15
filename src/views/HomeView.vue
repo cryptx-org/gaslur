@@ -61,8 +61,9 @@ export default {
   height: 100vh;
   background: $bg-color;
 }
+
 .animation {
-  animation: ScrollX 0.5s ease-in;
+  animation: ScrollX 1s ease-in;
 }
 .scale {
   animation: Scale 0.8s ease-in;

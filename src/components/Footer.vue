@@ -87,5 +87,9 @@ export default {};
     border-top: 1px solid #d7d7d7;
     padding-top: 1rem;
   }
+  .social-icons > * {
+    margin-right: 10px;
+    cursor: pointer;
+  }
 }
 </style>
