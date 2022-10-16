@@ -154,8 +154,9 @@ export default {
 .container__middle.open {
   display: flex;
   flex-direction: column;
+
   justify-content: flex-start;
-  padding-top: 4rem;
+  padding-top: 9rem;
   position: absolute;
   top: 0;
   left: 0;
