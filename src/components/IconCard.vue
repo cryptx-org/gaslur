@@ -65,6 +65,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   p {
     text-align: center;
     max-width: 8rem;
@@ -81,5 +82,17 @@ export default {
   height: 10rem;
   position: absolute;
   opacity: 0.5;
+}
+@media screen and (max-width: 900px) {
+  .v-col-3 {
+  }
+  .v-row {
+    justify-content: center;
+  }
+  .iconCard {
+    padding: 3rem 0;
+    margin: 0;
+    min-width: 20%;
+  }
 }
 </style>

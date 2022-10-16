@@ -37,4 +37,14 @@ export default {
     color: #e2e2e2;
   }
 }
+
+//media queries
+@media screen and (max-width: 900px) {
+  .text-container {
+    margin: 1rem;
+    h1 {
+      font-size: 2em;
+    }
+  }
+}
 </style>
