@@ -86,4 +86,39 @@ export default {};
     }
   }
 }
+
+//meadia queries
+@media screen and (max-width: 900px) {
+  .heroContainer {
+    grid-template-columns: 1fr;
+    padding: 4rem 1rem;
+  }
+  .heroContainer-2 {
+    display: none;
+  }
+  .heroContainer-1 {
+    justify-self: center;
+    text-align: center;
+    max-width: 80%;
+    h1 {
+      font-size: 2.5em;
+      line-height: 50px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 3rem;
+    }
+  }
+  .btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem auto;
+    max-width: 14rem;
+    .explore-btn {
+    }
+    .create-btn {
+      margin-top: 2rem;
+    }
+  }
+}
 </style>
