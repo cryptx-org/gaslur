@@ -61,6 +61,7 @@ export default {
   flex: 1 1 auto;
   min-width: 60%;
 
+  transition: all 1s ease;
   .btn {
     margin: -1px 10px;
     cursor: pointer;
@@ -121,6 +122,7 @@ export default {
 
 //media Queries
 @media screen and (max-width: 900px) {
+  //navBar
   .container__middle,
   .container__btn {
     display: none;
@@ -152,13 +154,20 @@ export default {
 .container__middle.open {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 4rem;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-color: red;
+  height: 100vh;
+  background-color: rgba($color: #1f1d2b, $alpha: 0.9);
+  backdrop-filter: blur(6px);
 
   & .btn {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
+    margin-top: 2rem;
   }
 }
 </style>
