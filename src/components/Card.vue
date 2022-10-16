@@ -2,7 +2,7 @@
   <div class="card-container">
     <v-row id="card">
       <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-        <v-card width="300px" flat color="#1f1d2b">
+        <v-card min-width="13rem" flat color="#1f1d2b">
           <v-img :src="card.src" height="313px"> </v-img>
 
           <div class="cardtext-container">
@@ -42,7 +42,7 @@ export default {
         flex: 3,
       },
       {
-        title: "Dignissim curabitu..",
+        title: "Dignism curabitu..",
         price: "0.01 Weth",
         src: require("@/assets/nft_pic3.png"),
         end: "01.34.35",
@@ -84,6 +84,17 @@ export default {
     padding: 2px 23px;
     border: 1px solid white;
     border-radius: 8px;
+  }
+}
+
+//media queries
+@media screen and (max-width: 900px) {
+  .v-col-3 {
+    max-width: 70%;
+  }
+  .v-row {
+    display: flex;
+    justify-content: center;
   }
 }
 </style>

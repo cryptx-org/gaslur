@@ -39,4 +39,19 @@ export default {
     cursor: pointer;
   }
 }
+@media screen and (max-width: 900px) {
+  .auctionsContainer {
+    padding: 1rem;
+    h1,
+    .view-btn {
+      font-size: 0.9em;
+    }
+  }
+  .top-bar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+}
 </style>

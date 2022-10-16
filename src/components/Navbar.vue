@@ -169,6 +169,7 @@ export default {
     text-align: center;
     font-size: 1rem;
     margin-top: 2rem;
+    border-bottom: none;
   }
 }
 </style>
