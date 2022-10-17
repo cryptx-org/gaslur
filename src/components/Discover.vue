@@ -5,10 +5,15 @@
         <p>DISCOVER</p>
       </div>
       <div class="discoverbuttons">
-        <p><v-icon>mdi-sort-variant</v-icon>Category</p>
+        <p>Category<v-icon>mdi-sort-variant</v-icon></p>
         <p>Cheapest<v-icon>mdi-chevron-down</v-icon></p>
         <p>Newest<v-icon>mdi-chevron-down</v-icon></p>
         <button><v-icon>mdi-filter</v-icon>Filter</button>
+      </div>
+      <div class="mobileButtons">
+        <v-icon>mdi-sort-variant</v-icon>
+        <v-icon>mdi-chevron-down</v-icon>
+        <v-icon>mdi-filter</v-icon>
       </div>
     </div>
     <div class="discovercards">
@@ -50,7 +55,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 3px;
+    gap: 9px;
     margin-right: 1.5rem;
     p {
       cursor: pointer;
@@ -71,6 +76,30 @@ export default {
     padding: 5px 20px;
     font-weight: 500;
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .discover {
+    padding: 0 1rem;
+    width: 100%;
+    .discoverlogo {
+      font-size: 20px;
+    }
+    .discoverbuttons {
+      display: none;
+    }
+    .mobileButtons {
+      display: flex;
+      justify-content: space-between;
+      & > * {
+        cursor: pointer;
+      }
+    }
+
+    .discoverNav {
+      width: 100%;
+      margin: 0;
+    }
   }
 }
 </style>

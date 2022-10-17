@@ -85,6 +85,7 @@ export default {
 }
 @media screen and (max-width: 900px) {
   .v-col-3 {
+    max-width: 80%;
   }
   .v-row {
     justify-content: center;

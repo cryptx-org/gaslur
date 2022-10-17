@@ -2,7 +2,7 @@
   <div class="card-container">
     <v-row id="card">
       <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-        <v-card min-width="13rem" flat color="#1f1d2b">
+        <v-card :width="display" flat color="#1f1d2b">
           <v-img :src="card.src" height="313px"> </v-img>
 
           <div class="cardtext-container">
@@ -26,6 +26,7 @@
 <script>
 export default {
   data: () => ({
+    display: 260,
     cards: [
       {
         title: "Lorem Ipsum",
@@ -57,6 +58,18 @@ export default {
       },
     ],
   }),
+  methods: {
+    onResize() {
+      if (window.innerWidth < 900) {
+        this.display = 150;
+      } else {
+        this.display = 260;
+      }
+    },
+  },
+  created() {
+    window.addEventListener("resize", this.onResize);
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -90,7 +103,7 @@ export default {
 //media queries
 @media screen and (max-width: 900px) {
   .v-col-3 {
-    max-width: 70%;
+    max-width: 100%;
   }
   .v-row {
     display: flex;
