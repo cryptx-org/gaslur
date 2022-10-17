@@ -100,6 +100,9 @@ export default {
       width: 100%;
       margin: 0;
     }
+    .discoverCards {
+      margin: 1rem auto;
+    }
   }
 }
 </style>

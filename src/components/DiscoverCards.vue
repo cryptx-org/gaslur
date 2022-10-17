@@ -131,5 +131,11 @@ export default {
   .v-col-3 {
     max-width: 50%;
   }
+  .card-container {
+    display: flex;
+    #card1 {
+      justify-content: center;
+    }
+  }
 }
 </style>
