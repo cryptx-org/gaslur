@@ -92,4 +92,15 @@ export default {};
     cursor: pointer;
   }
 }
+@media screen and (max-width: 900px) {
+  .footer {
+    display: none;
+  }
+  .socials {
+    justify-content: center;
+    .copyrights {
+      margin: 0;
+    }
+  }
+}
 </style>
